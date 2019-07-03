@@ -283,3 +283,28 @@ books.map(book => console.log(book))
 
 ## Promises
 
+- L'objet `Promise` est utilisé pour réaliser des traitements de façon asynchrone.
+```javascript
+let promise1 = new Promise(function(resolve, reject) {
+  setTimeout(function() {
+    resolve('foo');
+  }, 300);
+});
+
+promise1.then(function(value) {
+  console.log(value);
+  // Résultat attendu : "foo"
+});
+
+console.log(promise1);
+// Résultat attendu : [object Promise]
+```
+
+- Il est surtout utile de retenir le principe pour les appels à une API :
+```javascript
+// Utilisons la fonction javascript fetch qui effectue une requête HTTP sur l'URL saisie :
+fetch("https://api.imgflip.com/get_memes")
+.then(response => response.json())
+.then(json => console.log(json.data))
+```
+- `response.json()` permet de convertir le corps de la requête en JSON.
