@@ -16,7 +16,7 @@ const chaine = `Ma variable vaut ${maVariable}`
 ## Property Shorthand
 - Déclarer un objet rapidement :
 ```javascript
-// Imaginons les objets x et y
+// Imaginons les objets nom et prenom
 const nom = "nom", prenom = "prenom"
 
 // La déclaration :
