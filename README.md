@@ -263,7 +263,7 @@ export const monExportNomme = "Voilà ce que j'exporte"
 import {monExportNomme} from './MonExport'
 ```
 
-- **Notion importante** : lors de l'import, le chemin spécifié est relatif à la classe depuis laquelle on importe.
+- **Notion importante** : lors de l'import, le chemin spécifié est relatif fichier depuis lequel on importe.
 
 ## Boucle for..of et map
 - Une boucle for..of itère sur les objets eux-mêmes (et non pas sur l'indice) :
